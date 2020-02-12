@@ -1,15 +1,32 @@
-//
-//  main.cpp
-//  Unsorted List
-//
-//  Created by Tag1 on 1/31/20.
-//  Copyright © 2020 Lab-2. All rights reserved.
-//
+    /*
+    Carter Fluckiger
+    Data Structures 2nd Semester 2020
+    Due: 1/28/20
+    Lab number 2
+    Description:
+     */
 
+#include <iomanip>
 #include <iostream>
+#include "UnsortedListHeader.h"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+using namespace std;
+
+int main()
+{
+    UnsortedType list;
+    list.InsertItem((ItemType)42);
+    list.InsertItem((ItemType) 35);
+    
+    list.DeleteItem((ItemType)42);
+    cout<<list.GetNextItem()<<endl;
+    
+    list.UnionLists((NodeType*) 1 ,(NodeType*) 2, (ItemType) 5);
+   
+
+    
+
+    
+    
     return 0;
 }
