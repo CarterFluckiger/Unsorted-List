@@ -31,7 +31,6 @@ int UnsortedType::GetLength()
 {
     return length;
 }
-
 void UnsortedType::MakeEmpty()
 {
     while(head != nullptr)
@@ -43,8 +42,6 @@ void UnsortedType::MakeEmpty()
     length = 0;
     //Gets rid of all information stored in the nodes
 }
-
-
 void UnsortedType::InsertItem(ItemType item)
 {
     NodeType* location = new NodeType;
@@ -55,9 +52,6 @@ void UnsortedType::InsertItem(ItemType item)
     length++;
     //adds a new item to the list
 }
-
-
-
 bool UnsortedType::IsFull()
 {
         if(length + 1>MAX_ITEMS)
@@ -70,8 +64,6 @@ bool UnsortedType::IsFull()
         }
     //checks to see if list is full and returns bool value
 }
-
-
 void UnsortedType:: DeleteItem(ItemType item)
 {
     NodeType* location = head;
@@ -93,7 +85,6 @@ void UnsortedType:: DeleteItem(ItemType item)
     length--;
     //deletes item and lowers length by 1 to account for that
 }
-
 ItemType UnsortedType:: GetNextItem()
 {
     if(currentpos == nullptr)
@@ -108,10 +99,8 @@ ItemType UnsortedType:: GetNextItem()
     
     //moves to next node if it exists and get the item info from it
 }
-
 RelationshipType UnsortedType:: ComparedTo(ItemType item)
 {
-    
     if(item > currentpos->info)
         return Greater;
     if(item < currentpos->info)
@@ -124,8 +113,6 @@ RelationshipType UnsortedType:: ComparedTo(ItemType item)
     }
     //looks at relationship between two items in a list
 }
-
-
 NodeType* UnsortedType:: SearchList(ItemType item)
 {
     currentpos = head;
@@ -142,7 +129,6 @@ NodeType* UnsortedType:: SearchList(ItemType item)
         return nullptr;
     }
     //looks through list to find matchs of a variable
-   
 }
    NodeType* UnsortedType:: UnionLists(NodeType* list2,NodeType* list1, ItemType item)
 {
@@ -163,7 +149,6 @@ NodeType* UnsortedType:: SearchList(ItemType item)
             currentpos = currentpos->next;
             
         }
-        
     }while(currentpos->next != nullptr);
     return list3;
     //combines two lists and returns the final large list

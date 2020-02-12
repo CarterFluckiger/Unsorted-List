@@ -3,8 +3,10 @@
 
 #include <iostream>
 typedef int ItemType;
+// Sets type def for itemtype
 
 struct NodeType;
+//initializer for Node struct
 
 enum RelationshipType{
     Lesser = -1,Greater = 1, Equal = 0, Unknown
@@ -49,7 +51,6 @@ public:
     NodeType* UnionLists(NodeType* list2, NodeType* list1, ItemType item);
     //pre-conditions- It is accessed in the main
     //post-conditions- Combines two lists into one with no duplicates
-     
 private:
     NodeType* list1;
     NodeType* list2;
