@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8667478923E4ADF8003BBFFA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8667478823E4ADF8003BBFFA /* main.cpp */; };
+		8667479123E4B435003BBFFA /* UnsortedListImplementation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8667479023E4B435003BBFFA /* UnsortedListImplementation.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		8667478523E4ADF8003BBFFA /* Unsorted List */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Unsorted List"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8667478823E4ADF8003BBFFA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8667478F23E4B3FD003BBFFA /* UnsortedListHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnsortedListHeader.h; sourceTree = "<group>"; };
+		8667479023E4B435003BBFFA /* UnsortedListImplementation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UnsortedListImplementation.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				8667478823E4ADF8003BBFFA /* main.cpp */,
+				8667479023E4B435003BBFFA /* UnsortedListImplementation.cpp */,
+				8667478F23E4B3FD003BBFFA /* UnsortedListHeader.h */,
 			);
 			path = "Unsorted List";
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8667478923E4ADF8003BBFFA /* main.cpp in Sources */,
+				8667479123E4B435003BBFFA /* UnsortedListImplementation.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
